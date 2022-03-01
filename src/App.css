@@ -1,0 +1,77 @@
+body,html{
+  width: 100%;
+  height: 100%; 
+  background-color: #f1faee;
+}
+.Center{
+  display: flex;
+  overflow:hidden;
+  width: 85%; height: 70%;
+  background-color: #1d3557; color: rgb(228, 221, 216);
+  font-size: 2.5rem;
+  padding: 1%;
+  margin: 6% auto;
+  box-shadow:  0.2rem 0.2rem rgb(202, 147, 63) ;
+}
+#quote-box {
+  display: flex; flex-wrap: wrap;
+  color: #1d3557; background-color: #a8dadc;
+  max-height: 100%; height: 100%; width: 100%;
+  border: 0.3rem solid black ; 
+}
+ .wall{
+   
+   width: 100%;
+   padding: 0.2rem;
+ }
+ #top{
+   display: flex;
+  border-bottom: 0.3rem solid white;
+   height: 65%;
+ }
+ #bot{
+  overflow: hidden;
+   display: flex;
+   height: 35%;
+   padding: 0;
+ }
+#text {
+  margin: 5rem 0 0 8%;
+}
+#auth {
+  margin: 5rem 0 0 8%;
+}
+#author {
+  border-bottom: 0.3rem solid white;
+  border-left: 0.3rem solid white;
+  width: 60%;
+  max-height: 93%;
+}
+#new{
+  top: 0;
+  border-right: 0.3rem solid white;
+  border-bottom: 0.3rem solid white;
+  border-left: 0.3rem solid white;
+  max-height: 93%;
+  background-color: #f77f00;
+  
+}
+#tweet{
+  border-bottom: 0.3rem solid white;
+  border-left: 0.3rem solid white;
+  max-height: 93%;
+  background-color: #457b9d;
+  
+}
+.tnew{
+  width: 20%;
+}
+@media screen and (max-width:900px){
+  .Center{
+    width: 70; height: 85%;
+  }
+  .tnew{
+    width: 40%;
+  }
+  
+}
