@@ -64,6 +64,8 @@ body,html{
   
 }
 .tnew{
+  align-items: center;
+  display: flex;
   width: 20%;
 }
 @media screen and (max-width:900px){

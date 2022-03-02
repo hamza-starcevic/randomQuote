@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import ReactFCCtest  from  'react-fcctest';
 
 class App extends React.Component {
   constructor(props) {
@@ -27,6 +28,7 @@ class App extends React.Component {
     console.log(random);
     return (
       <div className="Center">
+        <ReactFCCtest></ReactFCCtest>
         <QuoteBox
           quote={this.state.quote[random][0]}
           author={this.state.quote[random][1]}
@@ -45,8 +47,8 @@ class QuoteBox extends React.Component {
         </div>
         <div className="wall" id="bot">
           <div id="author"><p id='auth'>{this.props.author}</p></div>
-          <div className='tnew' id='tweet'><p>Tweet</p></div>
-          <div className='tnew' id='new'><p>New</p></div>
+          <div className='tnew' id='tweet'><a href="twitter.com/intent/tweet" id="tweet-quote">Tweet</a></div>
+          <div className='tnew' id='new'><a href="javascript:void(0)" id='new-quote'>New</a></div>
         </div>
       </div>
     );
